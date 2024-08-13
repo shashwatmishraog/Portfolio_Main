@@ -2,38 +2,67 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+}
 
-  img {
-    max-width: 250px;
-    align-self: center;
-    background-color: var(--project-card-bg);
-    border-radius: 20px;
-  }
+.container img {
+  max-width: 250px;
+  align-self: center;
+  background-color: var(--project-card-bg);
+  border-radius: 20px;
+}
 
-  a {
-    width: fit-content;
-    text-decoration: none;
-    color: #222;
-    transition: transform 200ms ease-in-out;
-  }
+.container a {
+  width: fit-content;
+  text-decoration: none;
+  color: #222;
+  transition: transform 200ms ease-in-out;
+}
 
-  a:hover {
-    transform: scale(1.05);
-  }
+.container a:hover {
+  transform: scale(1.05);
 }
 
 .projectsContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 30px;
+  gap: 50px; /* Increased gap between project rows */
 }
 
-@media (width >= 800px) {
-  .projectsContainer {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 0 30px;
+.projectRow {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0; /* Added padding to create more space around each project */
+}
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px; /* Added padding inside each project card for spacing */
+  background-color: var(--project-card-bg); /* Optional: Add a background color for visual separation */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.projectCard h3 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.projectCard p {
+  margin: 5px 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 800px) {
+  .projectCard {
+    text-align: left;
+  }
+
+  .projectCard h3, .projectCard p {
+    text-align: left;
   }
 }
