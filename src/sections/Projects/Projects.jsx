@@ -15,7 +15,7 @@ function Projects() {
             src={viberr}
             link="https://dawnandbreeze.com/"
             h3="Dawn & Breeze"
-            p="House of Db multicorp Ecommerce store with modern minimal clothing for a unique style."
+            p="House of Db MultiCorp Ecommerce store with modern minimal clothing for a unique style."
           />
         </div>
         <div className={styles.projectRow}>
@@ -23,7 +23,7 @@ function Projects() {
             src={freshBurger}
             link="https://beethel.com/"
             h3="Beethel"
-            p="beethel.com is a specialized eCommerce suppliment store built for actor Danish Bhat"
+            p="This is a specialized eCommerce suppliment store built for actor Danish Bhat"
           />
         </div>
         <div className={styles.projectRow}>
@@ -31,7 +31,7 @@ function Projects() {
             src={hipsster}
             link="https://github.com/shashwatmishraog/plant-disease-detection-mini-1/"
             h3="Mini Project"
-            p="Plant Disease Detection Application"
+            p="Plant Disease Detection Application using YOLO V8 and Flask api"
           />
         </div>
         <div className={styles.projectRow}>
@@ -39,7 +39,7 @@ function Projects() {
             src={fitLift}
             link="https://github.com/SHASHWATMISHRAOG/VPC-TERRAFORM-GITHUB-ACTIONS"
             h3="VPC"
-            p="Terraform Creation"
+            p="Automate Terraform VPC deployment using GitHub Actions CI/CD pipeline."
           />
         </div>
       </div>
